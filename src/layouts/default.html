@@ -6,18 +6,21 @@
 <body>
 
 <div class="page">
+    <!-- header -->
     {{> header }}
 
-    <aside class="sidebar">
-        Sidebar
-    </aside>
+    <!-- sidebar -->
+    {{> sidebar }}
 
+    <!-- main -->
     <main class="main">
-        {{> body }}
+        <div class="container">
+            {{> body }}
+        </div>
     </main>
-</div> 
+</div>
 
-
+<!-- JS -->
 <script src="assets/js/app.js"></script>
 </body>
 </html>
