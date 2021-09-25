@@ -74,7 +74,7 @@ title: Post
             </p>
         </div>
         <div class="related">
-            <h3 class="related-title">Интересно почитать</h3>
+            <h3 class="post--subtitle">Интересно почитать</h3>
 
             <ul class="related__list">
                 <il class="related__list-item">
@@ -111,10 +111,58 @@ title: Post
 
             <form class="form" action="/" method="post">
                 <div class="form__group">
-                    <textarea class="form__control" name="comment-text" placeholder="Текст комментраия"></textarea>
+                    <textarea class="form__control form__control--textarea" name="comment-text"
+                              placeholder="Текст комментраия"></textarea>
+                    <span class="form__line">
+
+                    </span>
                 </div>
-                <button class="btn btn--blue" type="submit">Отправить</button>
+                <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
             </form>
+
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" alt="">
+                        <div class="comments__author">
+                            <div class="comments__name">
+                                Дмитрий Валак
+                            </div>
+                            <time class="comments__pubdate" datetime="2020-12-21 19:21">
+                                1 неделю назад
+                            </time>
+                        </div>
+                    </div>
+                    <div class="comments__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio esse in iusto nisi
+                        repellat, ullam vel. Animi asperiores commodi id inventore ipsam ipsum laudantium molestiae
+                        quae rem rerum. Dolorum, quibusdam.
+                        <button class="comments__reply" type="button">ответить</button>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" alt="">
+                        <div class="comments__author">
+                            <div class="comments__name">
+                                Дмитрий Валак
+                            </div>
+                            <time class="comments__pubdate" datetime="2020-12-21 19:21">
+                                1 неделю назад
+                            </time>
+                        </div>
+                    </div>
+                    <div class="comments__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio esse in iusto nisi
+                        repellat, ullam vel. Animi asperiores commodi id inventore ipsam ipsum laudantium molestiae
+                        quae rem rerum. Dolorum, quibusdam.
+                        <button class="comments__reply" type="button">ответить</button>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </article>
