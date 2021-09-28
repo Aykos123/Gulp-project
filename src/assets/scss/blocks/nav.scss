@@ -13,8 +13,12 @@
 
   .nav__item {
     position: relative;
+
     &:hover {
+
       .nav__link {
+
+        text-decoration: none;
         background-color: $blue;
       }
       > .subnav {
