@@ -5,6 +5,10 @@
   background-color: $secondary;
   box-shadow: 0 15px 25px rgba($black, .45);
   border-radius: 5px;
+
+  @include breakpoint($tablet-bp) {
+    padding: 1.5rem;
+  }
 }
 
 .add-post__form {
@@ -32,10 +36,14 @@
 }
 
 .add-post__form-actions {
-  width: 120px;
+  width: 12rem;
   flex-shrink: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  @include breakpoint($tablet-bp) {
+    width: 9rem;
+  }
 }
 
 .add-post__file,
@@ -49,25 +57,44 @@
   cursor: pointer;
 
   transition: background-color .2s linear;
+
+  @include breakpoint($tablet-bp) {
+    width: 3.4rem;
+    height: 3.4rem;
+
+  }
 }
 
 .add-post__file {
   background: #EBEBEB url("../images/add-photo.svg") center no-repeat;
+  background-color: $blue;
 
-  input{
+  input {
     display: none;
   }
 
   &:hover {
     background-color: darken(#EBEBEB, 5%);
+
+    @include breakpoint($tablet-bp) {
+      background-size: 18px;
+    }
   }
 }
 
 .add-post-send {
   margin-left: 1.5rem;
-  background-color: $blue;
+
+  font-size: 0;
+  color: transparent;
+
+  background: $blue url("../images/send.svg") center no-repeat;
 
   &:hover {
     background-color: darken($blue, 5%);
+
+    @include breakpoint($tablet-bp) {
+      background-size: 15px;
+    }
   }
 }
